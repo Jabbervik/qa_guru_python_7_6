@@ -99,3 +99,5 @@ def find_registration_button_on_login_page(page_url, button_text):
     args_str = f"[{page_url}, {button_text}]"
     actual_result = f"{readable_name} {args_str}"
     assert actual_result == "Find Registration Button On Login Page [https://companyname.com/login, Register]"
+
+#Done
