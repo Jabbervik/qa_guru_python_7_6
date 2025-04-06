@@ -6,14 +6,11 @@ def test_dark_theme_by_time():
     """
     current_time = time(hour=23)
     # TODO переключите темную тему в зависимости от времени суток (с 22 до 6 часов утра - ночь)
-
     if 22 <= current_time.hour or current_time.hour  < 6:
         should_use_dark_theme = True
     else:
         should_use_dark_theme = False
-
     is_dark_theme =should_use_dark_theme
-
     assert is_dark_theme is True
 
 
@@ -62,7 +59,6 @@ def test_find_suitable_user():
         {"name": "Maria", "age": 18},
     ]
 
-
 # Сделайте функцию, которая будет печатать
 # читаемое имя переданной ей функции и значений аргументов.
 # Вызовите ее внутри функций, описанных ниже
@@ -99,5 +95,4 @@ def find_registration_button_on_login_page(page_url, button_text):
     args_str = f"[{page_url}, {button_text}]"
     actual_result = f"{readable_name} {args_str}"
     assert actual_result == "Find Registration Button On Login Page [https://companyname.com/login, Register]"
-
-#Done
+    return (actual_result)
